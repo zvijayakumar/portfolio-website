@@ -25,9 +25,9 @@ const projects = [
 
 export const Projects = () => {
   return (
-    <section className="py-20 bg-secondary/50">
+    <section className="py-20 bg-gradient-to-br from-purple-50 via-white to-blue-50">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl font-bold text-center mb-12">Projects</h2>
+        <h2 className="text-3xl font-bold text-center mb-12 bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-purple-600">Projects</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
           {projects.map((project, index) => (
             <motion.div
@@ -37,16 +37,16 @@ export const Projects = () => {
               transition={{ duration: 0.5, delay: index * 0.1 }}
               viewport={{ once: true }}
             >
-              <Card className="h-full hover:shadow-lg transition-shadow">
+              <Card className="h-full hover:shadow-xl transition-all duration-300 backdrop-blur-sm bg-white/80">
                 <CardHeader>
-                  <CardTitle className="text-xl">{project.title}</CardTitle>
-                  <p className="text-sm text-muted-foreground">{project.period}</p>
+                  <CardTitle className="text-xl text-blue-800">{project.title}</CardTitle>
+                  <p className="text-sm text-blue-600">{project.period}</p>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-muted-foreground mb-4">{project.description}</p>
+                  <p className="text-blue-900/80 mb-4">{project.description}</p>
                   <div className="flex flex-wrap gap-2">
                     {project.tags.map((tag) => (
-                      <Badge key={tag} variant="secondary">{tag}</Badge>
+                      <Badge key={tag} variant="secondary" className="bg-gradient-to-r from-blue-100 to-purple-100 text-blue-800 hover:shadow-md transition-all duration-300">{tag}</Badge>
                     ))}
                   </div>
                 </CardContent>
