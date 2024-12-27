@@ -4,22 +4,22 @@ import { motion } from "framer-motion";
 
 const projects = [
   {
-    title: "Project 1",
-    description: "A full-stack web application built with React and Node.js",
-    tags: ["React", "Node.js", "MongoDB"],
-    link: "#"
+    title: "DocuSign Data Analytics",
+    description: "Developed scalable data pipelines using Apache Spark and Kafka, designed data pipelines in Snowflake, and implemented dbt Cloud for data modeling.",
+    tags: ["Apache Spark", "Kafka", "Snowflake", "dbt Cloud", "Airflow"],
+    period: "Jun 2023 - Oct 2024"
   },
   {
-    title: "Project 2",
-    description: "Mobile-first responsive website with modern animations",
-    tags: ["React", "TypeScript", "Tailwind"],
-    link: "#"
+    title: "Copia Global Data Science & Analytics",
+    description: "Developed ETL processes and visualization reports using Pyspark and AWS Glue. Automated customer segmentation analysis resulting in 63% increase in conversion rate.",
+    tags: ["PySpark", "AWS Glue", "PostgreSQL", "Python", "Tableau"],
+    period: "Dec 2021 - Jun 2023"
   },
   {
-    title: "Project 3",
-    description: "Cloud-based solution for data processing",
-    tags: ["Python", "AWS", "Docker"],
-    link: "#"
+    title: "TCS Customer Intelligence & Insights",
+    description: "Led migration from legacy big data platform to modern data architecture with PySpark. Developed ML data pipelines for banking analytics using MLOps practices.",
+    tags: ["PySpark", "Airflow", "PostgreSQL", "Apache Spark", "Python"],
+    period: "Dec 2017 - Dec 2021"
   }
 ];
 
@@ -39,7 +39,8 @@ export const Projects = () => {
             >
               <Card className="h-full hover:shadow-lg transition-shadow">
                 <CardHeader>
-                  <CardTitle>{project.title}</CardTitle>
+                  <CardTitle className="text-xl">{project.title}</CardTitle>
+                  <p className="text-sm text-muted-foreground">{project.period}</p>
                 </CardHeader>
                 <CardContent>
                   <p className="text-muted-foreground mb-4">{project.description}</p>
