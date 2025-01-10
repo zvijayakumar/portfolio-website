@@ -6,21 +6,21 @@ const projects = [
   {
     title: "DocuSign Data Analytics",
     company: "DocuSign",
-    description: "Led the development of scalable data pipelines using Apache Spark and Kafka, handling 1B+ e-Sign transactions. Implemented efficient data transformations in Snowflake using dbt Cloud, improving processing efficiency by 40%.",
+    description: "Led development of scalable data pipelines using Apache Spark and Kafka, handling 1B+ e-Sign transactions. Improved processing efficiency by 40% through Snowflake and dbt Cloud implementations.",
     tags: ["Apache Spark", "Kafka", "Snowflake", "dbt Cloud", "Airflow"],
     period: "Jun 2023 - Oct 2024"
   },
   {
     title: "Copia Global Data Science & Analytics",
     company: "Copia Global",
-    description: "Designed end-to-end ETL processes using PySpark and AWS Glue for e-commerce analytics platform serving 200K+ customers. Automated customer segmentation analysis resulting in 63% increase in conversion rate.",
+    description: "Designed ETL processes using PySpark and AWS Glue for e-commerce analytics platform. Automated customer segmentation analysis resulting in 63% increase in conversion rate.",
     tags: ["PySpark", "AWS Glue", "PostgreSQL", "Python", "Tableau"],
     period: "Dec 2021 - Jun 2023"
   },
   {
     title: "TCS Customer Intelligence & Insights",
     company: "Tata Consultancy Services",
-    description: "Led data engineering initiatives for banking analytics products, implementing digital persona solutions using Apache Spark MLlib. Managed complex ETL workflows using Airflow and PostgreSQL.",
+    description: "Led data engineering initiatives for banking analytics products, implementing digital persona solutions using Apache Spark MLlib and managing ETL workflows.",
     tags: ["PySpark", "Airflow", "PostgreSQL", "Apache Spark", "Python"],
     period: "Dec 2017 - Dec 2021"
   }
@@ -31,7 +31,7 @@ export const Projects = () => {
     <section className="py-20 bg-gradient-to-br from-purple-50 via-white to-blue-50">
       <div className="container mx-auto px-4">
         <h2 className="text-3xl font-bold text-center mb-12 bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-purple-600">Projects</h2>
-        <div className="grid grid-cols-1 gap-6 max-w-4xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {projects.map((project, index) => (
             <motion.div
               key={project.title}
