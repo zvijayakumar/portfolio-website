@@ -17,7 +17,7 @@ export const About = () => {
             variant="outline" 
             size="lg" 
             className="group bg-white/80 hover:bg-white/90 border-blue-200 mb-8"
-            onClick={() => window.open('/path-to-your-resume.pdf', '_blank')}
+            onClick={() => window.open('https://drive.google.com/file/d/1OLtIWELQST4uIYOYnwzGLccXolRWYnUO/view?usp=sharing', '_blank')}
           >
             Download Resume
             <FileDown className="ml-2 h-4 w-4 group-hover:translate-y-1 transition-transform" />
